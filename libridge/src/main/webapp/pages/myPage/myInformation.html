@@ -1,0 +1,59 @@
+<div class='myPageBox'>
+	<!-- 나의 정보이며 수정으로 이동하여 나의 정보를 수정 가능 -->
+	
+	<div id='myInformOutlinePage'>	
+		<div id='myInfoAll'>
+		
+			<div id="myProfileImg">
+				<img id="myInfoProfileImg">
+			</div>
+			
+			<div id='myInfoModify'>
+				<label for=''>사진 등록/변경</label><br>
+				<span><input type="file" onchange="previewImage(this,'myProfileImg')" id="selectImgBtn" /></span>
+			</div>
+			
+			<div id='imgUploadBtn'>
+				<button type='button' name="confirm" id='myImg_AddBtn'>등록</button>
+				<button type='button' name="cancel" id='myImg_ResetBtn'>취소</button>
+			</div>
+				
+		</div>
+		
+		<div>
+			<div id='myInfoOutline'>
+				<div id="infoList"></div>
+				<a href='#' class='wide' id='myInfoUpdateBtn'>정보수정</a>
+			</div>
+		</div>
+		
+		<div>
+			<div id='myInfoBookNum'>
+				<div class='myInformBookNum'>보관 도서 권수</div>
+				<div class='myInformBookNum' id='myKeepingBookNum'></div>
+				<div class='myInformBookNum'>나눔 도서 권수</div>
+				<div class='myInformBookNum' id='myDonationBookNum'></div>
+			</div>
+		</div>
+			
+		<div id='whiteSpace'></div>
+	</div>
+</div>
+	
+	<!-- 포인트 양도 팝업 Div -->
+	<div id='myInfoPoint'>
+		<p>
+			<input type="text" id="toUser" placeholder='양도할 아이디'/>
+		</p>
+		<p>
+			<input type="text" id="toPoint" placeholder='양도할 포인트'/>
+		</p>
+		<p>
+			<a href='#' class='wide' id='pointGrant'>양도</a>
+		</p>
+	</div>
+   
+<script>
+	myInform.init();
+</script>
+    

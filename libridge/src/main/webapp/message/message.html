@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>2단레이아웃 템플릿</title>
+<link rel="stylesheet" href="http://code.jquery.com/ui/1.9.1/themes/base/jquery-ui.css" />
+<link rel="stylesheet" href="message.css"> 
+<script src="http://code.jquery.com/jquery-1.9.1.js"></script>
+<script src="http://code.jquery.com/ui/1.10.2/jquery-ui.js"></script>
+<script type="text/javascript" src="http://malsup.github.com/jquery.corner.js"></script>
+<script src="https://raw.github.com/dinbror/bpopup/master/jquery.bpopup.min.js"></script>
+<script type="text/javascript" src="message.js"></script>
+
+</head>
+<body>
+<!-- 래퍼 : 전체 바디를 감싸는 div -->
+<div id="message_wrapper">
+<!-- 내비 : 좌측 사이드 바-->	 
+	<div id="message_nav">
+		<div >
+			<img src="img/writeMessage.jpg" alt="쪽지쓰기" id='writeMessage'/>
+		</div>
+		<div id='message_nav_menu'>
+			<div>
+				<span>
+					<a id='receive_box' href='#'>받은쪽지함</a> 
+				</span>
+				<span>0</span>
+			</div>
+			<div>
+				<span >
+					<a id='send_box'  href="#" >보낸쪽지함</a> 
+				</span>
+				<span>0</span>
+			</div>
+			<div>
+				<span>
+					<a id='storage_box' href="#">쪽지보관함</a> 
+				</span>
+				<span>0</span>
+			</div>
+			<div>
+				<span>
+					받은쪽지와 <br />보낸쪽지는  <br />3개월후에 <br />자동 삭제됩니다.<br /> 쪽지보관함<br />에 보관하세요.
+				</span>
+			</div>
+		</div>
+	</div>
+<!-- 내비 끝 --> 
+<!-- 콘텐츠 : 로드 실행시 화면전환 -->
+	 <div id='message_content'>
+		<div id="message_search">
+			<span><button class='button'  onClick="">전체</button></span>
+			<span><button class='button'  onClick="">보관</button></span>
+			<span><button class='button' onClick="">삭제</button></span> 
+			<span><input id="msgSearch" type="text" ></span>
+			<span><button class='' onClick="return func()">SEARCH</button></span>
+		</div>		
+		<div id="table">
+				<div class='row'>
+			              <div class='column_narrow'>CHECK </div>
+			              <div class='column_wide'>보낸사람</div>
+			              <div class='column_wide'>내용</div>
+			              <div class='column_time'>시간</div>
+			    </div> <!--  table_row_1 끝 -->
+	            <div class='row'>
+		              <span class='column_narrow'>
+		              	<input type="checkbox" id="isAllChecked" name="isAllChecked2" value="" />
+		              </span>
+		              <span class='column_wide'>형진석(jshyung)</span>
+		              <span class='column_wide'>
+		              		소셜 도서관 프로젝트 제안서
+		              </span>
+		              <span class='column_time'>13-04-11</span>
+	        	</div> 
+	      </div><!--  table 끝 -->
+	</div>
+<!-- 콘텐츠 끝 -->
+<!-- 푸터 : 페이지 하단 정보 -->
+	<div id="message_footer">
+        <span id='teamName' class='team'>
+            noSmoking @ Java33 in Bit
+        </span>
+        <span id='teamMember' class='team'>
+            박정관 / 김연정 / 형진석 / 홍성남 / 김홍태
+        </span>
+	</div>
+<!-- 푸터 끝 -->
+<!-- 팝업 시작 : bpopup 사용전 감춰진 div-->
+	<div id="message_popup">
+		<div id="message_popup_header">
+			<label for='writeMsg_label' id='message_popup_label'>쪽지쓰기</label>
+	 	</div>
+	
+		<div id="message_popup_receiver">
+			<span><label for='message_label'>받는사람</label></span>
+			
+			<span><input class='' type="text" /></span>
+			<span><button class='' onClick="return func()">SEARCH</button></span>
+		</div>
+		<div id="message_popup_title">
+			<span><label for='receiver'>제목</label></span>
+			<span><input type='text' id='message_popup_input_title'></span>
+		</div>
+		<div id="message_popup_textarea">
+			<span><textarea id='message_textarea'></textarea></span>
+		</div>
+		<div id="message_popup_sendButton">
+			<span><button class='button'>보내기</button></span>
+		</div>
+	</div>
+<!-- 팝업 끝 -->
+</div>
+<!-- 래퍼 끝 -->
+</body>
+</html>

@@ -1,0 +1,35 @@
+{"user":{"id":"poppy","name":"김연정","email":"poppy@gmail.com",
+				"password":null,"tel":"010-456","regDate":"2013-04-05","level":0},
+	"lendDeliveryList":[{"id":"별명4","title":"제목4","startDate":1367334000000,"state":"배송중","confirm":"발송"},
+			  {"id":"별명5","title":"제목5","startDate":1357734000000,"state":"배송중","confirm":"발송"},
+			  {"id":"별명6","title":"제목6","startDate":1388634000000,"state":"배송완료","confirm":"발송"},
+			  {"id":"별명7","title":"제목7","startDate":1359634000000,"state":"배송진행","confirm":"발송"},
+			  {"id":"별명8","title":"제목8","startDate":1345424000000,"state":"배송중비","confirm":"발송"}],
+			  "status":"success"}	
+					
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			

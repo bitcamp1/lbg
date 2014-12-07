@@ -1,0 +1,115 @@
+@CHARSET "utf-8";
+/* 래퍼 CSS*/
+#message_wrapper{
+	position:relative; top:30px; left:20px;
+	max-width: 900px;min-width:700px; height:650px;
+	margin-left: auto; margin-right: auto; 
+	text-align: center; font-size:12px;
+}
+/* 	내비 CSS */
+#message_nav{
+	position:absolute; top:0; left:0;
+	width:200px;height:560px;   
+	border:grey 1px solid; 
+	padding:15px;
+}
+#message_nav_menu{
+	 width:190px;
+}
+/* 콘텐츠 CSS */
+#message_content{
+	position:absolute; top:0; left:30px;
+	margin:0 0 10px 210px ;
+	width:660px;
+	height:590px; 
+	border:grey 1px solid;
+}
+#message_search{
+	padding: 5px;border:1px grey solid;/* 버튼 */
+} 
+#table>.row{
+	width: 99%;
+	height: 20px;
+	align: left;
+	
+}
+.row>.column_narrow {
+	width:10%;
+	float:left;
+	color:grey; 
+	height:18px;
+}
+.row>.column_wide {
+	width:33%;
+	float:left;
+	color:grey; 
+	height:18px;
+}
+.row>.column_time {
+	width:20%;
+	float:left;
+	color:grey; 
+	height:18px;
+}
+/* 푸터 CSS */
+#message_footer{
+	position:absolute;top:600px; left:0;
+	text-align: center;
+	border:grey 1px solid; 
+	padding:5px;
+	height:5%;width:99%;
+}
+/* 팝업 CSS */
+#message_popup{
+	display:none; 
+	position: relative;
+	height : 550px; width : 500px;  
+	background-color : white;
+}	
+#message_popup_header{
+	height:30px;
+	
+	padding:'10px';
+	color:'white';
+}
+#message_popup_label{
+	color:white; 
+	font-weight:bold; 
+	background:'black';
+}
+
+#message_popup_receiver{
+	border:grey 1px solid;
+	height:30px;
+}
+#message_popup_title{
+	border:grey 1px solid;
+	height:30px;
+}
+#message_popup_textarea{
+	
+	height:400px;
+}
+#message_textarea{
+	height:393px;
+	width:495px;
+}
+#message_popup_sendButton{
+	padding: 10px 220px 20px 20px;
+	width:260px;
+}
+#message_popup_input_title{
+	width:430px;
+}
+
+
+
+
+
+
+
+
+
+
+
+

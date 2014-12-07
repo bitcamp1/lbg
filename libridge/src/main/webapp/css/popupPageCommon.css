@@ -1,0 +1,35 @@
+#popupPage {
+	border  : 1px #D3D4D5 solid;
+	position: relative;
+	display: block;
+	*border  : 1px red solid;
+	width   : 820px;
+	height  : 430px;
+	top : 28px;
+	left    : 50px;
+	overflow : hidden;
+}
+
+#leftSide {
+	*border : 1px red solid;
+	display : block;
+	float : left;
+	width : 470px;
+	margin-top : 10px;
+	
+}
+
+#rightSide {
+	*border : 1px blue solid;
+	display : block;
+	float : right;
+	width : 300px;
+	margin-right: 30px;
+	margin-top : 20px;
+}
+
+.popupProfileImg {
+	border : 1px #D3D4D5 solid;
+	display : inline-block;
+	width : 90px;
+}

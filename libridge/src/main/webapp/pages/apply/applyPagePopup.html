@@ -1,0 +1,32 @@
+<div id='popupPage'>
+	<div id='leftSide'>
+		<div id='leftSideInner'>
+		</div>
+	</div>
+
+	<div id='rightSide'>
+        <div id='ownerInfoAll'>
+			<div id='ownerSelectPhraseP'>
+				<h1 id='ownerSelectPhrase'></h1>
+			</div>
+    	</div>
+    	
+        <div class='pagingBtn'>
+			<p>
+				<a id="prevList" href="#">[이전]</a>
+				<span id="currPageNo"></span>
+				<a id="nextList" href="#">[다음]</a>
+			</p>
+			
+            <div id='applyPageButton'>
+           		<div class='applyButton' id='applyCancel'>취소</div>
+           		<div class='applyButton' id='applyConfirm'>신청</div>
+        	</div>
+		</div>
+	</div>
+</div>
+
+<script>
+	applyPagePopup.init();
+	applyPagePopup.applyBookInfo();
+</script>

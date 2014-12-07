@@ -1,0 +1,106 @@
+#applyWrapper {
+	*border : 1px red solid;
+	position: relative;
+	display : block;
+	width   : 100%;
+	overflow: hidden;
+}
+
+#applyPage {
+	  border  : 1px #D3D4D5 solid;
+	  position: relative;
+	  display: block;
+	  *border  : 1px red solid;
+	  width   : 820px;
+	  *height  : 100%;
+	  left    : 50px;
+}
+
+#ownerInfoAll {
+	*border: 1px blue solid;
+	display : block;
+	width : 300px;
+	margin : 0 auto;
+	position: relative;
+}
+
+.applyPageOwnerInfoDiv {
+	*border: 1px #D3D4D5 solid;
+	display : block;
+	width : 300px;
+	margin : 0 auto 7px auto;
+	position: relative;
+	overflow : hidden;
+}
+
+.ownerImgTable {
+	*border: 1px red solid;
+	display: block;
+	width: 100px;
+	float: left;
+}
+
+.ownerInfo {
+	*border: 1px red solid;
+	display: block;
+	width: 180px;
+	float: left;
+	margin-left : 20px;
+}
+
+.ownerInfoDetail{
+	border-bottom: 1px #D3D4D5 solid;
+	display  : inline-block;
+	width       : 120px;
+	text-align: center;
+	font-size: 0.8em;
+	margin-left : 10px;
+	padding: 2px 0;
+}
+
+.ownerName {
+	*border: 1px red solid;
+	width: 350px;
+}
+
+.ownerProfileImg {
+	border : 1px #D3D4D5 solid;
+	display : inline-block;
+	width : 90px;
+}
+
+input[type='radio'] {   
+	vertical-align: middle;
+}
+
+#ownerPageNumber {
+	*border: 1px red solid;
+	display: block;
+	width: 300px;
+	margin-right: auto;
+	margin-left: auto;
+	padding-bottom: 30px;
+}
+
+#applyPageButton {
+	position: relative;
+	*border: 1px red solid;
+	display: block;
+    width: 130px;
+    margin: 260px auto 40px auto;
+}
+
+#applyButton {
+	float: right;
+}
+
+#ownerSelectPhrase {
+	 font-size: 0.8em;
+	 color    : #5C5C5C;
+}
+
+#ownerSelectPhraseP {
+	display:block;
+	width:200px;
+	margin: 0 auto 5px auto;
+}

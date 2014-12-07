@@ -1,0 +1,51 @@
+
+<!-- 래퍼 : 전체 바디를 감싸는 div -->
+<div class="contentsWrapper">
+<!-- 내비 : 좌측 사이드 바-->	 
+	<div class="contentsNav">
+		<div >
+			<img src="../../img/writeMessage.jpg" alt="쪽지쓰기" id='writeMessage'/>
+		</div>
+		<div class='contentsMenu'>
+		<ul>
+			<li><span> <a id='memberList' href='#'>회원목록</a>
+			</span> <span>0</span></li>
+			<li><span> <a id='bookList' href="#">도서목록</a>
+			</span> <span>0</span></li>
+			<li><span> <a id='storage_box' href="#">공지사항</a>
+			</span> <span>0</span></li>
+		</ul>
+			
+		</div>
+	</div>
+<!-- 내비 끝 --> 
+<!-- 콘텐츠 : 로드 실행시 화면전환 -->
+	 <div class='contentsBody'>
+		<div class="contentsSearch">
+			<span><button class='button'  onClick="">전체</button></span>
+			<span><button class='button'  onClick="">보관</button></span>
+			<span><button class='button' onClick="">삭제</button></span> 
+			<span><input id="msgSearch" type="text" ></span>
+			<span><button class='' onClick="return func()">SEARCH</button></span>
+		</div>		
+		<table class="table">
+			<thead>
+				<tr>
+					<th></th>
+					<th>보낸사람</th>
+					<th>내용</th>
+					<th>시간</th>
+				</tr>
+			</thead>
+			<tbody class='row' id='adminTbody'>
+			
+			
+	        </tbody> 
+	      </table><!--  table 끝 -->
+	</div>
+<!-- 콘텐츠 끝 -->
+
+
+
+</div>
+<!-- 래퍼 끝 -->

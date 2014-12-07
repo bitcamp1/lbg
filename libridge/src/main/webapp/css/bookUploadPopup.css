@@ -1,0 +1,76 @@
+#bookUploadSearchForm {
+	display : none;
+}
+	
+#bookUploadSearchPopup {
+    border    : 1px #D3D4D5 solid;
+    background-color: #FFF;
+    display: block;
+    width     : 360px;
+    text-align: center;
+    margin   : 15px auto 0 auto;
+    position  : relative;
+    padding   : 0;
+    z-index   : 5;
+}
+
+#bookUploadSearchPopup input {
+	border : 1px solid #EBEBEB;
+	display : block;
+	*outline : thin solid #D3D4D5;
+	height : 40px;
+	margin : 0 auto;
+	padding-left : 15px;
+	
+}
+
+#bookUploadSearchPopup input:focus {
+	
+	*outline : thin solid #0995E0;
+	border : 1px solid #0995E0;
+}
+
+#bookUploadNotice {
+    border: 1px solid transparent;
+    display: block;
+    color : #808080;
+    font-size: 0.9em;
+    text-align: center;
+    position: relative;
+    margin: 0 auto;
+}
+
+#bookUploadBox {
+    border   : 1px #D3D4D5 solid;
+    display: inline-block;
+    width    : 75%;
+    margin-left: 32px;
+    font-size: 0.9em;
+}
+
+#bookUploadFormField {
+    border    : 1px #D3D4D5 solid;
+    padding   :0;
+    border    :0;
+    margin-top:25px;
+}
+
+#uploadButton {
+	*border : 1px red solid;
+	display : block;
+	clear : both;
+}
+
+.uploadButtons {
+	border : 1px #D3D4D5 solid;
+	position : relative;
+	display : inline-block;
+	height : 36px;
+	line-height : 36px;
+	width : 100px;
+	left : 60px;
+	margin-right : 15px;
+	cursor : pointer;
+	text-align : center;
+}
+

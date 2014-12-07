@@ -1,0 +1,201 @@
+<div id='myPageWrapper'>
+	<div id='myPageBox'>
+        
+        <div id='myPageTabs'>
+            <ul>
+                <li><a href="#myPageApplyTab">도서신청 현황</a></li>
+                <li><a href="#myPageAcceptTab">도서수락 현황</a></li>
+                <li><a href="#myPageMyInfoTab">마이 페이지</a></li>
+            </ul>
+            
+<!-- 도서신청 현황 탭 -->
+            <div id='myPageApplyTab'>
+
+
+                <div id='myPageApply' class='myPageDivs'>
+                    <span class='myPageCate'>신청도서 수락/거부 현황</span><a href='#'><img class='moreButton' id='applyDetailBtn' src='img/more1.jpg'></a>
+                    
+                    <table id="applyList" class='myPageTable'>
+                        <tr>
+                            <th>신청한 날짜</th>
+                            <th>소유자 ID</th>
+                            <th>책 제목</th>
+                            <th>상태</th>
+                        </tr>
+                    </table>
+                </div>
+
+                <div class='seperateLine'></div>
+
+                <!-- 대출자 배송에 대한 정보 테이블. 책의 제목 , 배송상태에 대한 정보를 담는다 myDeliveryDetail.html로 이동하여 더 많은 정보를 볼수 있다-->
+                <div id='myPageBorrowDelivery' class='myPageDivs'>
+                    <span class='myPageCate'>신청도서 배송 현황</span><a href='#'><img class='moreButton' id='borrowDeliveryDetailBtn' src='img/more1.jpg'></a>
+                    <table id="borrowDeliveryList" class='myPageTable'>
+                        <tr>
+                            <th>발송된 날짜</th>
+                            <th>소유자 ID</th>
+                            <th>책 제목</th>
+                            <th>배송 상태</th>
+                            <th>배송 확인</th>
+                        </tr>
+                    </table>
+                </div>
+
+                <div class='seperateLine'></div>
+
+                <!-- 내가 빌린책에 대한 정보가 들어 있다, myBorrowDetail.html로 이동하여 더 많은 정보를 볼 수 있다 -->
+                <div id='myPageBorrow' class='myPageDivs'>
+                    <span class='myPageCate'>신청도서 반납 현황</span><a href='#'><img class='moreButton' id='borrowDetailBtn' src='img/more1.jpg'></a>
+                    <table id="borrowList" class='myPageTable'>
+                        <tr>
+                            <th>대출 날짜</th>
+                            <th>소유자 ID</th>
+                            <th>책 제목</th>
+                            <th>상태</th>
+                        </tr>
+                    </table>
+                 </div>
+
+            </div>
+<!-- 도서수락 현황 탭 -->
+            <div id='myPageAcceptTab'>
+                <!--책의 수락 요청에 대한 확인 페이지 myAcceptDetail.html로 이동하여 더 많은 정보 확인-->
+                <div id='myPageAccept' class='myPageDivs'>
+                    <span class='myPageCate'>수락결졍여부 현황</span><a href='#'><img class='moreButton' id='acceptDetailBtn' src='img/more1.jpg'></a>
+                    <table id="acceptList" class='myPageTable'>
+                        <tr>
+                            <th>신청 날짜</th>
+                            <th>신청자 ID</th>
+                            <th>책 제목</th>
+                        </tr>
+                    </table>
+                 </div>
+
+                <div class='seperateLine'></div>
+
+                <!-- 대여자 배송에 대한 정보 테이블. 책의 제목 , 배송상태에 대한 정보를 담는다 myDeliveryDetail.html로 이동하여 더 많은 정보를 볼수 있다-->
+                <div id='myPageLendDelivery' class='myPageDivs'>
+                    <span class='myPageCate'>수락도서 발송 현황</span><a href='#'><img class='moreButton' id='lendDeliveryDetailBtn' src='img/more1.jpg'></a>
+                    <table id="lendDeliveryList" class='myPageTable'>
+                        <tr>
+                            <th>수락한 날짜</th>
+                            <th>신청자 ID</th>
+                            <th>책 제목</th>
+                            <th>배송 상태</th>
+                            <th>발송</th>
+                        </tr>
+                    </table>
+                </div>
+
+                <div class='seperateLine'></div>
+
+                <!-- 내가 빌려준 책에 대한 정보가 들어 있다 myLendDetail.html -->
+            	<div id='myPageLend' class='myPageDivs'>
+                    <span class='myPageCate'>수락도서 회수 현황</span><a href='#'><img class='moreButton' id='lendDetailBtn' src='img/more1.jpg'></a>
+        	 		<table id="lendList" class='myPageTable'>
+            			<tr>
+                            <th>대여 날짜</th>
+                            <th>신청자 ID</th>
+            				<th>책 제목</th>
+        					<th>상태</th>
+            			</tr>
+          		</table>
+            	</div>
+
+            </div>
+<!-- 내 정보 보기 탭	 -->		
+            <div id='myPageMyInfoTab'>
+				
+				<div id='myInfoFixWrapper'>
+	<div class='nav'>
+		<div id="myProfileImg">
+			<img src="img/mosidora-daum-l.jpg" width='152'
+				alt='만약 고교야구 여자매니저가 피터 드러커를 읽는다면' />
+		</div>
+
+		<div id="myInfoReadOnly"></div>
+
+
+
+		<div id='myInfoModify'>사진 등록/변경</div>
+
+		<div id='myInfoFixButton'>
+			<span class='myInfoFixButton'><button type='button'
+					name="cancel" id='myInfoCancelBtn'>등록</button></span> 
+			<span class='myInfoFixButton'><button type='button' name="confirm"
+					id='myInfoConfirmBtn'>확인</button></span>
+				
+		</div>
+
+
+	</div>
+	<div>
+	<table id='myInfoFixContent'>
+		<tr>
+		
+			<td><label for='myInfo_memberId_value'>아이디 </label> </td>
+			<td id='myInfo_memberId_value'></td>
+		
+		</tr>
+		<tr>
+			<td><label for='myInfo_name_value'>이름 </label></td>
+			<td id='myInfo_name_value'></td>
+
+		</tr>
+		<tr>
+			<td><label for='myInfo_email_value'>E-mail </label></td>
+			<td id='myInfo_email_value'></td>
+		</tr>
+		<tr>
+			<td><label for='myInfo_tel_value'>전화번호 </label></td>
+			<td id='myInfo_tel_value'></td>
+		</tr>
+		<tr>
+			<td><label for="myInfo_zipCode_value">우편번호 </label></td> 
+			<td id='myInfo_zipCode_value'></td>
+		</tr>
+		<tr>
+			<td><label for="myInfo_addr1_value">주소 </label></td> 
+			<td id='myInfo_addr1_value'></td>
+		</tr>
+		<tr>
+			<td><label for="myInfo_addr2_value">상세주소 </label></td> 
+			<td id='myInfo_addr2_value'></td>
+		</tr>
+		<tr>
+			<td>
+				<button id='myInfoUpdateBtn'>수정</button>
+			<td>
+		</tr>
+		</table>
+	</div>
+</div>
+				 	<div class='seperateLine'></div>
+                <!-- 현재 보유하고 있는 포인트의 정보 -->
+             	<div id='myPagePoint' class='myPageDivs'>
+            		<p><span class='myPageCate'>포인트</span></p>
+            		<div>
+	                    <p id='pointForm'></p>
+					</div>
+						<input type="text" name="name" placeholder='양도할 친구의 아이디' /><br/>
+						<input type="text" name="name" placeholder='양도할 포인트' />
+						<button id="grant">양도</button>
+            	</div>
+
+              
+               <!-- 삼각형 에러메시지 때문에 임시로 주석처리	
+                 myPointDetail로 이동하여 jquery를 적용확인 
+            	<div id="myPointDetail" title="포인트 양도">
+        			<p><span class="ui-icon ui-icon-alert grantMyPoint">'ID'님에게 고객님의 포인트 '200'점을 양도 하시겠습니까?'</span></p>
+            	</div>
+ -->
+
+                
+            </div>
+        </div> <!-- MyPage Tab Div end-->
+    </div>
+
+    <script>
+        myPage.init();
+    </script>
+</div>

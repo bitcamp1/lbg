@@ -1,0 +1,90 @@
+#myPageWrapper {
+	*border      : 1px blue solid;
+	background   : white;
+	width        : 920px;
+	height       : 100%;
+	position     : relative;
+	margin-right : 10px;
+	margin-top   : 0px;
+	margin-bottom: 0px;	
+	padding      : 0 0 0 -30px;
+	overflow    : hidden;
+}
+
+
+
+/*이 css도 위의 Wrapper와 동일*/
+/*모든 페이지에 같이 적용*/
+#myPageBox {
+	*border     : 1px #D3D4D5 solid;
+	width       : 800px;
+	position    : relative;
+	margin-right: auto;
+	margin-left : auto;
+}
+
+.myPageDivs {
+	*border     : 1px red solid;
+	display     : block;
+	width       : 600px;
+	height      : 100%;
+	position    : relative;
+	font-size   : 0.8em;
+	margin-right: auto;
+	margin-left : auto;
+	padding     : 20px 0;
+}
+
+.myPageTable {
+	border: 1px #D3D4D5 solid;
+	width : 580px;
+	text-align: center;
+	margin: 0 auto;
+}
+
+.myPageTable th {
+	border    : 1px #D3D4D5 solid;
+}
+
+.myPageTable td {
+	border: 1px #D3D4D5 solid;
+}
+
+.myPageCate {
+	*border: 1px red solid;
+	display: inline-block;
+	position: relative;
+	top: -3px;
+	font-size: 1em;
+	font-weight: bold;
+}
+
+#infoList {
+	display : block;
+	margin-top : 10px;
+}
+
+.myInfoLabel {
+	display: inline-block;
+	*border : 1px red solid;
+	width : 80px;
+	text-align : right;
+	font-size: 1em;
+}
+
+.simpleMyInfo {
+	display: inline-block;
+	*border : 1px blue solid;
+	*width : 200px;
+	text-align : left;
+	padding-left : 5px;
+	font-size: 1em;
+}
+
+.myInfoUnderLine {
+	display : inline-block;
+	width : 330px;
+	margin-top : 8px;
+	border-bottom: 1px #D3D4D5 solid;
+	padding-bottom: 2px;
+}

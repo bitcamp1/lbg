@@ -1,0 +1,1 @@
+http://jquery-ui-map.googlecode.com/svn/trunk/demos/jquery-google-maps-mobile.html

@@ -1,0 +1,699 @@
+body {
+    *border         : 1px black solid;
+    background-color: #EBEBEB;
+    position        : absolute;
+    width           : 100%;
+    height          : 100%;
+    margin          : 0;
+    padding         : 0;
+    overflow-y		: scroll;
+	font-family: 'Nanum Gothic', sans-serif;
+}
+
+#headerbg {
+    *border: 1px red solid;
+    position : fixed;
+    *position : relative;
+    background: url('../img/header50.png') repeat-x;
+    *background-color: #FAFAFA;
+    width           : 100%;
+    height          : 50px;
+    *border-bottom   : 2px #0995E0 solid;
+    z-index: 15;
+}
+
+#header {
+    *border     : 1px black solid;
+    width       : 920px;
+    height     : 48px;
+    position    : relative;
+    top         : -54px;
+    left        : -5px;
+    margin-top  : 0px;
+    margin-left : auto;
+    margin-right: auto;
+    font-size   : 20px;
+    z-index: 10;
+}
+
+/*로고메뉴, 책등록, 검색, 쪽지, 유저 메뉴 전체 묶음 div*/
+#topmenu {
+	font-family: 'Noto Sans', sans-serif;
+    *border     : 1px yellow solid;
+    background  : #FAFAFA;
+    width       : 100%;
+    height      : 40px;
+    position    : relative;
+    margin-top  : 0px;
+    margin-left : auto;
+    margin-right: auto;
+    padding     : 5px 0 0 0px;
+    font-size   : 21px;
+    font-weight: bold;
+}
+
+/*사이트 로고*/
+#logo {
+    *border    : 1px red solid;
+    display    : inline-block;
+    width      : 120px;
+    height     : 40px;
+    float      : left;
+    margin-top : -4px;
+    text-align : center;
+    color      : #0995E0;
+}
+
+/*유저 네임(ID). ID 길이의 최대 허용 글자수를 정해서 그에 맞춰 재설정 필요*/
+/*.memberStatus {*/
+.memberState {
+    *border    : 1px red solid;
+    display    : inline-block;
+    height     : 40px;
+    float: right;
+    *position   : absolute;
+    *top        : 0px;
+    *right      : 0px;
+    margin-top : -8px;
+    color      : #0995E0;
+    text-align : right;
+    padding    : 8px 0 0 0;
+}
+
+/*유저네임은 이미지가 아닌 텍스트로 할 생각이라 마우스 오버시 색상 반전 필요*/
+.memberState a {
+    color      : #0995E0;  
+}
+
+.circle {
+	background-color : red;
+	border-radius: 50%;
+	width: 20px;
+	height: 20px;
+	z-index : 200;
+	/* width and height can be anything, as long as they're equal */
+}
+
+#username {
+    *border: 1px red solid;
+    float: right;
+    margin-top: -5px;
+}
+
+#login {
+    *border: 1px red solid;
+    float: right;
+    margin-top: -2px;
+}
+
+/*카테고리버튼 위치*/
+#topCategoryS {
+	*border : 1px red solid;
+	display : inline-block;
+	float : left;
+	margin-top : 4px;
+	margin-left : 30px;
+	width : 108px;
+	padding-left : 3px;
+}
+
+#topCategoryD {
+	*border : 1px red solid;
+	display : inline-block;
+	float : left;
+	margin-top : 4px;
+	margin-left : 10px;
+	width : 108px;
+	padding-left : 3px;
+}
+
+.topCategory > a {
+	color : #878787;
+}
+
+.topCategory > a:hover {
+	color : #0995E0;
+}
+
+#categoryMenu {
+	*border : 1px red solid;
+	position : fixed;
+	top		 : 50px;
+	width    : 100%;
+	height   : 30px;
+	line-height : 30px;
+	z-index  : 10;
+	display : none;
+}
+
+.cate {
+	display : table-cell;
+	width : 12.5%;
+	height : 30px;
+	float : left;
+	text-align: center;
+	font-size: 1em;
+	font-weight: bold;
+	z-index : 20;
+}
+
+.cate > a {
+	height : 30px;
+}
+
+#cate1 {
+	background-color: #BA042E;
+}
+
+#cate2 {
+	background-color: #F27C1B;
+}
+
+#cate3 {
+	background-color: #E6DE05;
+}
+
+#cate4 {
+	background-color: #129603;
+}
+
+#cate5 {
+	background-color: #0081C2;
+}
+
+#cate6 {
+	background-color: #000280;
+}
+
+#cate7 {
+	background-color: #8202CC;
+}
+
+#cate8 {
+	background-color: #00BAAE;
+}
+
+.cateSubmenu {
+	*border : 1px red solid;
+	position : fixed;
+	top		 : 80px;
+	width    : 100%;
+	height   : 30px;
+	z-index  : 10;
+	cursor : pointer;
+}
+
+.subCate {
+	*border : 1px blue solid;
+	height : 30px;
+	*position : relative;
+	float : left;
+	line-height : 30px;
+	text-align: center;
+	font-size: 1em;
+	font-weight: bold;
+	z-index : 17;
+}
+
+/*---------------*/
+
+.cateLiterature {
+	width : 50%;
+}
+
+#literature {
+	display : none;
+}
+
+#novel {
+	background-color: #BA042E;
+}
+
+#poemEssay {
+	background-color: #BA042E;
+}
+
+/*--------------*/
+
+#liberalArts {
+	display : none;
+}
+
+.cateLiberalArts {
+	width : 20%;
+	background-color: #F27C1B;
+}
+
+#humanities {
+	background-color: #F27C1B;
+}
+
+#history {
+	background-color: #F27C1B;
+}
+
+#politics {
+	background-color: #F27C1B;
+}
+
+#economic {
+	background-color: #F27C1B;
+}
+
+#religion {
+	background-color: #F27C1B;
+}
+/*--------------*/
+
+#scienceEngineer {
+	display : none;
+}
+
+#science {
+	width : 33%;
+	background-color: #E6DE05;
+}
+
+#computer {
+	width : 34%;
+	background-color: #E6DE05;
+}
+
+#engineering {
+	width : 33%;
+	background-color: #E6DE05;
+}
+
+/*--------------*/
+
+#lifeStyle {
+	display : none;
+}
+
+.cateLifeStyle {
+	width : 20%;
+}
+
+#life {
+	background-color: #129603;
+}
+
+#cooking {
+	background-color: #129603;
+}
+
+#health {
+	background-color: #129603;
+}
+
+#sports {
+	background-color: #129603;
+}
+
+#travel {
+	background-color: #129603;
+}
+
+/*--------------*/
+
+#culture {
+	display : none;
+}
+
+.cateCulture {
+	width : 50%;
+}
+
+#popCulture {
+	background-color: #0081C2;
+}
+
+#comics {
+	background-color: #0081C2;
+}
+
+/*--------------*/
+
+#education {
+	display : none;
+}
+
+#middleEdu {
+	width : 16%;
+	background-color: #000280;
+}
+
+#childEng {
+	width : 17%;
+	background-color: #000280;
+}
+
+#elementaryEdu {
+	width : 17%;
+	background-color: #000280;
+}
+
+#foreignLang {
+	width : 17%;
+	background-color: #000280;
+}
+
+#exam {
+	width : 17%;
+	background-color: #000280;
+}
+
+#dictionary {
+	width : 16%;
+	background-color: #000280;
+}
+
+/*--------------*/
+
+#childTeen {
+	display : none;
+}
+
+.cateChilTeen {
+	width : 20%;
+}
+
+#adolscent {
+	background-color: #8202CC;
+}
+
+#kid {
+	background-color: #8202CC;
+}
+
+#kidSeries {
+	background-color: #8202CC;
+}
+
+#child {
+	background-color: #8202CC;
+}
+
+#infant {
+	background-color: #8202CC;
+}
+
+/*--------------*/
+
+#etc {
+	display : none;
+}
+
+#official {
+	width : 33%;
+	background-color: #00BAAE;
+}
+
+#magazine {
+	width : 34%;
+	background-color: #00BAAE;
+}
+
+#selfImprovement {
+	width : 33%;
+	background-color: #00BAAE;
+}
+
+/*--------------*/
+
+/*도서등록버튼 위치*/
+#bookUploadBtnD {
+	*border : 1px red solid;
+	dislplay : inline-block;
+	float : left;
+	margin-top : 4px;
+	*margin-left : 5px;
+	width : 83px;
+	padding-left : 3px;
+}
+
+#bookUploadPopup {
+	color : #878787;
+}
+
+#bookUploadPopup:hover {
+	color : #0995E0;
+}
+
+#bookUploadSearchPopup {
+    border    : 1px #D3D4D5 solid;
+    background-color: #FFF;
+    display: none;
+    width     : 200px;
+    text-align: center;
+    *margin   : 0 auto;
+    right     : 0px;
+    position  : absolute;
+    padding   : 0;
+    z-index   : 5;
+}
+
+/*검색창 위치 크기*/
+#searchBox {
+    border  : 2px #0995E0 solid;
+    display : inline-block;
+    box-sizing:border-box;
+    -moz-box-sizing:border-box;
+    -webkit-box-sizing:border-box;
+    width   : 240px;
+    height  : 36px;
+    float: left;
+    margin-top : 3px;
+}
+
+#searchBox img {
+	*border : 1px red solid;
+	display : inline-block;
+	margin-top : 4px;
+	margin-left : 3px;
+}
+
+#searchBox > input:focus {
+	outline : 0;	
+}
+
+#searchInput {
+	font-family: 'Noto Sans', sans-serif;
+    border     : none;
+    padding    : 0;
+    display    : inline-block;
+    width      : 180px;
+    height     : 30px;
+    position   : absolute;
+    font-size  : 0.9em;
+    font-weight: bold;
+    margin-top : 2px;
+    margin-left: 10px;
+    color      : #0995E0;
+    background-color: #FAFAFA;
+}
+
+#searchInput::-webkit-input-placeholder {
+    font-style: bold;
+    color     : #0995E0;
+}
+#searchInput:-moz-input-placeholder {
+    *font-style: bold;
+    color     : #0995E0;
+}
+#searchInput::-ms-input-placeholder {
+    font-style: bold;
+    color     : #0995E0;
+} 
+
+/*쪽지, 프로필 사진 아이콘*/
+#message {
+	position : relative;
+	*border : 1px red solid;
+    *border    : 1px #0995E0 solid;
+    display    : inline-block;
+    height     : 30px;
+    width : 30px;
+    float: right;
+    margin-top: 5px;
+    margin-right : 25px;
+    text-align : center;
+    color      : #0995E0;
+    cursor : pointer;
+}
+
+#msgImg {
+	background : url('../img/message3.png') no-repeat scroll 0px 0;
+	width : 30px;
+	height : 30px;
+}
+
+/* .iconMoveUp { */
+/* 	background-position : 0px -35px; */
+/* } */
+
+#unreadMsg {
+	display : inline-block;
+	position : absolute;
+	width : 20px;
+	height : 20px;
+	top : -5px;
+	left : 15px;
+}
+
+#unreadMsgCount {
+	display : inline-block;
+	position : absolute;
+	width : 20px;
+	height : 20px;
+	top : -2px;
+	left : 14px;
+	z-index : 20;
+	font-weight: bold;
+	font-size : 0.6em;
+	color : #FAFAFA;
+}
+
+/* #testLine1 { */
+/* 	position : absolute; */
+/* 	border-top : 1px red solid; */
+/* 	width : 90%; */
+/* 	top : 12px; */
+/* 	left : 0px; */
+/* 	height : 5px; */
+/* 	z-index: 100; */
+/* } */
+
+/* #testLine2 { */
+/* 	position : absolute; */
+/* 	border-top : 1px blue solid; */
+/* 	width : 90%; */
+/* 	top : 36px; */
+/* 	left : 0px; */
+/* 	height : 45px; */
+/* 	z-index: 100; */
+	
+/* } */
+
+#profile {
+	*border : 1px red solid;
+    *border    : 1px #0995E0 solid;
+    display    : inline-block;
+    float: right;
+    margin-top: 5px;
+    margin-right : 11px;
+    text-align : center;
+}
+
+#profileImg {
+	*border : 1px blue solid;
+	width : 30px;
+	height : 30px;
+}
+
+#wrapper {
+    border-left          : 1px #CCCCCC solid;
+    border-right          : 1px #CCCCCC solid;
+    background-color: #F5F5F5;
+    width           : 920px;
+    min-height : 600px;
+    *position        : relative;
+    margin-top      : 0px;
+    margin-left     : auto;
+    margin-right    : auto;
+    *overflow		: hidden;
+}
+
+#content {
+    *border      : 1px #D3D4D5 solid;
+    width       : 100%;
+    *position    : relative;
+    top         : 60px;
+    margin-right: auto;
+    margin-left : auto;
+    *overflow	: hidden;
+}
+
+#footerbg {
+	background: url('../img/footer50.png') repeat-x;
+    *border-top      : 2px #0995E0 solid; 
+    *background-color: black;
+    position        : relative;
+    *position        : absolute;
+    width           : 100%;
+    height          : 50px;
+    *margin-top      : 15px;
+}
+
+#footer {
+    *border     : 1px black solid;
+    width       : 730px;
+    height      : 50px;
+    position    : relative;
+    bottom      : 0px;
+    left        : 0;
+    margin-top  : -50px;
+    margin-left : auto;
+    margin-right: auto;
+    font-size   : 14px;
+}
+
+.team {
+    *border  : 1px red solid;
+    display : inline-block;
+    width   : 350px;
+    position: absolute;
+    left: 190px;
+    text-align: center;
+}
+
+#teamName {
+    bottom  : 30px;
+}
+
+#teamMember {
+    bottom  : 7px;
+}
+
+/* Drop Down Menu */
+
+ul.submenu {
+    background-color  : white;
+    border            : 1px #D3D4D5 solid;
+    display           : block;
+    width             : 160px;
+    list-style-type   : none;
+    position          : absolute;
+    top               : 37px;
+    font-size         : 0.7em;
+    z-index           : 5;
+    display: none;
+}
+
+ul.submenu li {
+    margin: 7px 0;
+    *padding : 5px 0 5px 20px;
+}
+
+ul.submenu a:hover {
+    color: #FFF;
+}
+
+ul.submenu a {
+	*border : 1px red solid;
+	display : block;
+	width : 140px;
+	padding : 6px 0 6px 20px;
+	*margin : 0 -2px;
+}
+
+/*로고 메뉴와 유저 메뉴에 대한 위치*/
+#logomenu {
+    left   :4px;
+    padding: 0;
+}
+
+#usermenu {
+    right  : -6px;
+    padding: 0;
+}

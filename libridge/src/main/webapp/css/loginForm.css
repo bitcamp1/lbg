@@ -1,0 +1,48 @@
+#logIn_signUpForm {
+    position  : absolute;
+    border    : 1px #D3D4D5 solid;
+    background-color: #FFF;
+    display: none;
+    width     : 200px;
+    text-align: center;
+    margin   : 0 auto;
+    *left     : 50px;
+    z-index   : 5;
+}
+
+#loginForm input {
+	margin-top : 20px;
+	border : 1px solid #EBEBEB;
+	*outline : thin solid #D3D4D5;
+	padding-left : 15px;
+	
+}
+
+#loginForm input:focus {
+	
+	*outline : thin solid #0995E0;
+	border : 1px solid #0995E0;
+}
+
+#autoLoginCheckbox {
+	font-size: 9px;
+}
+
+#joinMember {
+	margin-bottom: 10px;
+}
+
+#joinMember a {
+    font-size: 0.7em;
+}
+
+#joinMember a:hover {
+	font-size: 0.7em;
+}
+
+.loginInputForm {
+	display : block;
+	width : 80%;
+	height : 40px;
+	margin : 0 auto;
+}

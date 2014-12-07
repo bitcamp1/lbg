@@ -1,0 +1,88 @@
+<div id='conditionBtnDiv'>
+	<div class='conditionBtn' id='keepingConditionBorrow'>
+		보관 도서
+	</div>
+	<div class='conditionBtn' id='donationConditionBorrow'>
+		나눔 도서
+	</div>
+</div>
+	
+<div class='myPageBox'>
+
+	<!--책의 신청에 대한 확인 페이지 -->
+	<div class='tableTitle boxOuterShadow'>수락 현황</div>
+	<div class='myPageEachTable boxOuterShadow'>
+		<div id='myPageApply' class='myPageDivs'>
+			<table id="applyList" class='myPageTable'>
+				<tr>
+					<th>신청 날짜</th>
+					<th>소유하신 분</th>
+					<th>도서 제목</th>
+					<th>신청 확인</th>
+				</tr>
+			</table>
+		</div>
+		
+		<div>
+			<div class='pagingBtnMypage'>
+				<a id ="prevList1" href="#">[이전]</a>
+				<span id="currPageNo1"></span>
+				<a id="nextList1" href="#">[다음]</a>
+			
+			</div>
+		</div>
+	</div>
+
+	<!-- 대출자 배송에 대한 정보 테이블. 책의 제목 , 배송상태에 대한 정보를 담는다 -->
+	<div class='tableTitle boxOuterShadow'>배송 현황</div>
+	<div class='myPageEachTable boxOuterShadow'>
+		<div id='myPageBorrowDelivery' class='myPageDivs'>
+			<table id="borrowDeliveryList" class='myPageTable'>
+				<tr>
+					<th>발송 날짜</th>
+					<th>소유하신 분</th>
+					<th>도서 제목</th>
+					<th>배송 확인</th>
+				</tr>
+			</table>
+		</div>
+	
+		<div>
+			<div class='pagingBtnMypage'>
+				<a id ="prevList2" href="#">[이전]</a>
+				<span id="currPageNo2"></span>
+				<a id="nextList2" href="#">[다음]</a>
+			
+			</div>
+		</div>
+	</div>
+
+	<!-- 내가 빌린책에 대한 정보가 들어 있다. -->
+	<div class='tableTitle boxOuterShadow'>대출 현황</div>
+	<div class='myPageEachTable boxOuterShadow'>
+		<div id='myPageBorrow' class='myPageDivs'>
+			<table id="borrowList" class='myPageTable'>
+				<tr>
+					<th>대출한 날짜</th>
+					<th>소유하신 분</th>
+					<th>도서 제목</th>
+					<th>반납 신청</th>
+				</tr>
+			</table>
+		</div>
+	
+		<div>
+			<div class='pagingBtnMypage'>
+				<a id ="prevList3" href="#">[이전]</a>
+				<span id="currPageNo3"></span>
+				<a id="nextList3" href="#">[다음]</a>
+			
+			</div>
+		</div>
+	</div>
+
+</div>
+
+<script>
+	bookApplyCon.init();
+</script>

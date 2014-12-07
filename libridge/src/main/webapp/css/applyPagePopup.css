@@ -1,0 +1,131 @@
+#ownerInfoAll {
+	*border : 1px red solid;
+	display : block;
+	position : relative;
+	width : 300px;
+	margin : 18px auto 0 auto;
+	float : right;
+	top : -24px;
+}
+
+/* 소유주의 정보들 */
+.applyPagePopupOwnerInfoDiv {
+	border-bottom : 1px #D3D4D5 solid;
+	display : block;
+	width : 300px;
+	height : 110px;
+	margin : 15px auto 15px auto;
+	position: relative;
+	overflow : hidden;
+}
+
+.ownerImgTable {
+	*border : 1px red solid;
+	display: block;
+	position : relative;
+	width: 120px;
+	height : 90px;
+	float: left;
+	margin-top : 10px;
+	margin-left : 10px;
+}
+
+.ownerInfo {
+	*border: 1px red solid;
+	display: block;
+	width: 160px;
+	float: left;
+	margin-top : 20px;
+	margin-left : 5px;
+}
+
+.ownerInfoDetail{
+	*border-bottom: 1px #D3D4D5 solid;
+	display  : inline-block;
+	width       : 120px;
+	text-align: center;
+	font-size: 0.8em;
+	margin-left : 10px;
+	margin-bottom : 5px;
+	padding: 2px 0;
+}
+
+.ownerName {
+	*border: 1px red solid;
+	width: 350px;
+}
+/* ------------------- */
+
+/* 로그인 하지 않았을 경우 책의 위치만 보여주기 위한 css */
+.applyPagePopupLocInfoDiv {
+	border-bottom : 1px #D3D4D5 solid;
+	display : block;
+	width : 300px;
+	height : 40px;
+	margin : 15px auto 5px auto;
+	position: relative;
+	overflow : hidden;
+}
+
+.locInfo {
+	*border: 1px red solid;
+	display: block;
+	width: 290px;
+	float: left;
+	margin-top : 20px;
+	margin-left : 5px;
+}
+
+.locInfoDetail{
+	*border: 1px #D3D4D5 solid;
+	display : inline-block;
+	text-align: left;
+	font-size: 0.8em;
+	margin-left : 10px;
+	margin-bottom : 5px;
+	padding: 2px 0;
+}
+
+.locLeft {
+	float : left;
+	width : 220px;
+}
+
+.locRight {
+	float : right;
+	width : 40px;
+}
+/* ----------------------------------------------- */
+
+#applyPageButton {
+	position: relative;
+	*border: 1px red solid;
+	display: block;
+    width: 220px;
+    top : 10px;
+    margin: 0 auto 0px auto;
+}
+
+.applyButton {
+	border : 1px #D3D4D5 solid;
+	display : inline-block;
+	width : 100px;
+	height : 36px;
+	line-height : 36px;
+	cursor : pointer;
+}
+
+#ownerSelectPhrase {
+	display : block;
+	width : 150px;
+	text-align : center;
+	margin : 0 auto;
+	font-size: 0.8em;
+	color    : #5C5C5C;
+}
+
+#ownerSelectPhraseP {
+	display:block;
+	width:200px;
+	margin: 0 auto 5px auto;
+}

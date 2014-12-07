@@ -1,0 +1,56 @@
+<div id='informUpdatePage'>
+	<div id='informUpdate'>
+	
+		<div class='informUpdateForm'>
+			<label for='updateFormId'>아이디</label>
+			<input class='informUpdateInput' type = 'text' id='updateFormId' readonly='readonly'/>	
+		</div>
+		<div class='informUpdateForm'>
+			<label for='updateFormPwd'>패스워드</label>
+			<input class='informUpdateInput' type='password' id='updateFormPwd'/>
+		</div>
+		<div class='informUpdateForm'>
+			<label for='updateFormConfirmPwd'>패스워드 확인</label>		
+			<input class='informUpdateInput' type='password' id='updateFormConfirmPwd'/>
+		</div>
+		<div class='informUpdateForm'>
+			<label for='updateFormName' >이름</label>
+			<input class='informUpdateInput' type='text' id='updateFormName' readonly='readonly'/>
+		</div>
+		<div class='informUpdateForm'>
+			<label for='updateFormEmail'>E-mail</label>	 
+			<input class='informUpdateInput' type='text' id='updateFormEmail'/>
+		</div>
+			
+		<div class='informUpdateForm'>
+			<label for='updateFormPhoNo'>전화번호</label>
+			<input class='informUpdateInput' type='text' id='updateFormPhoNo'/>
+		</div>
+		<div class='informUpdateForm'>
+			<label for="updateFormZipCode">우편번호</label>
+			<div id='informUpdateInputZipcode'>
+				<input type="text" id='joinMemberZipCode1' readonly='readonly' />
+				<div id='zipUpdate'><a href='#' class='wide' id='zipCodeLooking'>검색</a></div>
+			</div>
+		</div>
+		<div class='informUpdateForm'>
+			<label for='updateFormAddr1'>주소</label>
+			<input class='informUpdateInput' type='text' id='addr1' readonly='readonly' />
+		</div>
+		<div class='informUpdateForm'>
+			<label for="updateFormAddr2">상세주소</label>
+			<input class='informUpdateInput' type='text' id='updateFormAddr2'/>
+		</div>
+		
+	</div>
+	<div class='outerCenter' id='updateFormBottom'>
+		<div class='innerCenter myInfoUpdateConfirm'>
+			<div class='updateInformBtn' id='updateCancelA'>취소</div>
+			<div class='updateInformBtn' id='updateBtn'>확인</div>
+		</div>
+	</div>
+</div>
+
+<script>
+	myInfoUpdate.init();
+</script>

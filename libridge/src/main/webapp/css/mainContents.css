@@ -1,0 +1,53 @@
+#mainContentsPage {
+	width       : 820px;
+	height      : 100%;
+	margin-right: auto;
+	margin-left : auto;
+	padding-top: 80px;
+	overflow : hidden;
+}
+
+.mainCategory {
+	*border : 1px #D3D4D5 solid;
+	width        : 810px;
+	display      : block;
+	margin : 0 auto;
+	font-size    : 1em;
+	font-weight  : bold;
+	text-align : center;
+}
+
+.cateTitle {
+	border : 1px #D3D4D5 solid;
+	display : inline-block;
+	width : 781px;
+	height : 40px;
+	line-height : 40px;
+	margin-left : -4px;
+	margin-top : 20px;
+	margin-bottom : 10px;
+}
+
+/*책 섬네일 css*/
+/*메인 페이지 and 검색 시 나오는 책 위치와 섬네일, 제목 폰트 크기*/
+.mainBookInfo {
+	border : 1px #D3D4D5 solid;
+	display      : block;
+	width		 : 150px;
+	height		 : 180px;
+	text-align   : center;
+	float        : left;
+	margin-top   : 5px;
+	margin-bottom : 5px;
+	margin-left  : 16px;
+	margin-right : 16px;
+	padding : 20px 10px;
+	font-size    : 0.5em;
+}
+
+.cateTitle {
+	*background-color : #EDF50C;
+	*background-color : #FF00EA;
+	background-color : #C21BE0;
+	color : #FFF;
+}

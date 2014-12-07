@@ -1,0 +1,119 @@
+#myLibraryBookList {
+	padding-top : 49px;
+	height : 100%;
+	width : 100%;
+}
+div.myLibrary {
+	height : 100%;
+	width : 100%;
+}
+div.myLibraryHeaderTab {
+	*border : black 1px solid;
+	height : 25px;
+	line-height : 25px;
+	background-image : url(../img/sp_horizontal.png);
+	font-weight: bold;
+	font-size: 1.2em;
+	text-align : center;
+}
+
+.myLibTabName {
+	display : inline-block;
+	*border : 1px red solid;
+	width : 456px;
+	margin-top : 1px;
+	text-shadow: 0px 2px 3px #555
+}
+
+#myLibraryKeeping {
+	*float : left;
+	*margin : 1px 0px 0 180px;
+}
+
+#myLibraryDonation {
+	*margin : 1px 0px 0 180px;
+}
+
+.myLibTabName > a {
+	color: #6B4B00;
+}
+
+.myLibTabName > a:hover {
+	text-shadow: #fff 0px 1px 0, #000 0 -1px 0;
+}
+
+
+div.myLibraryfooterTab {
+	*border : black 1px solid;
+	height : 25px;
+	background-image : url(../img/sp_horizontal.png);
+}
+#myLibraryContents {
+	border : black 1px solid;
+	height : 820px;
+	background-image : url(../img/bg_view.png);
+}
+span.myLibraryMovementSpan {
+	margin : 30px 0 0 425px;
+}
+
+/* 책 테이블 영역 */
+/* 이미지 백그라운드 Div */
+div.myLibraryBookInfo {
+	background-image : url(../img/notImg2.jpg);
+	padding : 5px 0 0 0;
+	height : 160px;
+	width : 110px;
+	*border : black 1px solid;
+	margin : 12px 15px 0 0;
+}
+/* 팝업창 메인 Div */
+#myLibraryKeepingPopup {
+	display: none;
+	border : blue 1px solid;
+	background-color : white;
+	height : 500px;
+	width : 400px;
+}
+
+#libPrevList {
+	margin-left : 400px;
+}
+#myLibraryCount {
+	margin : 0 25px;
+}
+
+.bookDetailContents {
+	*height : 20px;
+	*float : right;
+}
+/* 팝업창 구글맵 구현Div  */
+#map { 
+	border : black 2px solid;
+	position:absolute;
+	height: 70%; 
+	width: 50%;
+	top : 300px;
+	left : 30px;
+	
+}
+/* 이미지 메인 Div */
+.myLibraryBookDiv {
+	*border : 1px red solid;
+	float : left;
+	height : 200px;
+	width : 120px;
+	padding : 0 0 0 20px;
+	margin : 2px 16px 3px 22px;
+}
+/* 대여가능여부 Div */
+.myLibrarylendText {
+	*border : 1px red solid;
+	width : 100px;
+	height: 20px;
+	margin-top : 6px;
+	padding-left : 30px;
+	font-family: Arial;
+	font-weight: bold;
+	
+}

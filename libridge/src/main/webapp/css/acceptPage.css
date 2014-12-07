@@ -1,0 +1,134 @@
+ #acceptWrapper {
+	*border : 1px red solid;
+	position: relative;
+	display : block;
+	width   : 100%;
+	background-color : #F5F5F5;
+	overflow: hidden;
+ }
+
+ #acceptPage {
+	  border  : 1px #D3D4D5 solid;
+	  position: relative;
+	  display: block;
+	  width   : 820px;
+	  *height  : 100%;
+	  left    : 50px;
+}
+
+/*-------------------------------------------*/
+
+/*신청자에 관련된 정보들에 대한 div*/
+#users {
+	*border      : 1px red solid;
+	position    : relative;
+	display     : block;
+	width       : 700px;
+	top         : 10px;
+	margin-right: auto;
+	margin-left : auto;
+	clear       : both;
+}
+
+/*신청자에 대한 정보*/
+#applicant {
+	border: 1px red solid;
+	display: block;
+	position: relative;
+	width: 400px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+#applicantImg {
+	border     : 1px #D3D4D5 solid;
+	display    : inline-block;
+	width      :100px;
+	height     : 95px;
+	float      : left;
+	margin-top : 25px;
+	margin-left: 20px;
+}
+
+#applicantTable {
+	*border: 1px red solid;
+	position     : relative;
+	*top          : 22px;
+	*left         : 30px;
+	float: right;
+	margin-top : 25px;
+	margin-right: 20px;
+	margin-bottom: 44px;
+}
+
+#applicantTable td {
+	border-bottom: 1px #D3D4D5 solid;
+	display  : block;
+	width       : 200px;
+	text-align: center;
+	font-size: 0.8em;
+	padding: 2px 0 2px 3px;
+}
+
+/*신청자에게 달린 코멘트들 - 주의 : 책이나 수락하는 사람에게 달린 정보가 아니다*/
+#replyForm {
+	*border : 1px #D3D4D5 solid;
+	display : block;
+	position: relative;
+	width   : 460px;
+	*position: relative;
+	*top     : 22px;
+	*left    : 60px;
+	margin: 20px auto 0 auto;
+}
+
+/*코멘트가 누구에게 달리는지 알아보기 힘든 느낌이 들어서 첨부한 글귀*/
+#applicantCommentExplain {
+	display   : inline-block;
+	width     : 100%;
+	text-align: right;
+	z-index   : 10;
+	font-size : 0.7em;
+
+}
+
+#replyForm table {
+	display: block;
+	width  :100%;
+}
+
+.replyCommentId {
+	padding-left    : px;
+	font-size       : 0.7em;
+	font-weight     : bold;
+	color           : #000;
+	background-color: #E0E0E0;
+}
+
+.replyComment {
+	display       : block;
+	width         : 450px;
+	font-size     : 0.7em;
+	color         : #000;
+	margin-left   : 5px;
+	padding-top   : 5px;
+	padding-bottom: 5px;
+	vertical-align: middle;
+}
+
+#acceptPageButton {
+	*border    : 1px #D3D4D5 solid;
+	display   : inline-block;
+	width     : 180px;
+	text-align: center;
+	clear     : both;
+	margin    : 0px 0 25px 120px;
+}
+
+#acceptDeny {
+	float : left;
+}
+
+#acceptButton {
+	float : rigth;
+}

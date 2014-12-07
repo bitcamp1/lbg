@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <title>Library Bridge</title>
+        <link rel="stylesheet" href="http://code.jquery.com/ui/1.10.2/themes/smoothness/jquery-ui.css" />
+        <link rel="stylesheet" href="css/jquery.fancybox.css?v=2.1.4" type="text/css" media="screen" />
+        <link rel="stylesheet" href="css/jquery.fancybox-buttons.css?v=1.0.5" type="text/css" media="screen" />
+        <link rel="stylesheet" href="css/jquery.fancybox-thumbs.css?v=1.0.7" type="text/css" media="screen" />
+        <link href='http://fonts.googleapis.com/css?family=Carrois+Gothic+SC|Noto+Sans|Average+Sans' rel='stylesheet' type='text/css' />
+        <link rel="stylesheet" href="css/common.css" type="text/css">
+        <link rel="stylesheet" href="css/index.css" type="text/css">
+        <link rel="stylesheet" href="css/mainContents.css" type="text/css">
+        <link rel="stylesheet" href="css/popupPageCommon.css" type="text/css">
+        <link rel="stylesheet" href="css/bookSearch.css" type="text/css">
+        <link rel="stylesheet" href="css/applyPagePopup.css" type="text/css">
+        <link rel="stylesheet" href="css/acceptPagePopup.css" type="text/css">
+        <link rel="stylesheet" href="css/bookUploadSearch.css" type="text/css">
+        <link rel="stylesheet" href="css/bookUploadPopup.css" type="text/css">
+        <link rel="stylesheet" href="css/uploadPopup.css" type="text/css">
+        <link rel="stylesheet" href="css/myPages.css" type="text/css">
+        <link rel="stylesheet" href="css/myInfoUpdate.css" type="text/css">
+        <link rel="stylesheet" href="css/loginForm.css" type="text/css">
+        <link rel="stylesheet" href="css/joinPage.css" type="text/css">
+        <link rel="stylesheet" href="css/joinPopupPage.css">
+<!--         <link rel="stylesheet" href="css/zipCodePopup.css"> -->
+        <link rel="stylesheet" href="css/myLibrary.css" type="text/css">
+        <link rel="stylesheet" href="css/message.css" type="text/css">
+        <script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
+        <script src="http://code.jquery.com/ui/1.10.2/jquery-ui.js"></script>
+        <script src="js/jquery.fancybox.pack.js?v=2.1.4"></script>
+        <script src="js/jquery.fancybox-buttons.js?v=1.0.5"></script>
+		<script src="js/jquery.fancybox-media.js?v=1.0.5"></script>
+		<script src="js/jquery.fancybox-thumbs.js?v=1.0.7"></script>
+        <script type="text/javascript" src="http://maps.googleapis.com/maps/api/js?sensor=true"></script>
+        <script src="js/index.js"></script>
+        <script src="js/bookSearch.js"></script>
+        <script src="js/mainContents.js"></script>
+        <script src="js/applyPagePopup.js"></script>
+        <script src="js/acceptPagePopup.js"></script>
+        <script src="js/bookApplyCondition.js"></script>
+        <script src="js/bookApplyConditionD.js"></script>
+        <script src="js/bookAcceptCondition.js"></script>
+        <script src="js/bookAcceptConditionD.js"></script>
+        <script src="js/bookUpResult.js"></script>
+        <script src="js/bookUploadPopup.js"></script>
+        <script src="js/myLibrary.js"></script>
+        <script src="js/myInformation.js"></script>
+        <script src="js/myInfoUpdate.js"></script>
+        <script src="js/message.js"></script>
+        <script src="js/joinPage.js"></script>
+<!--         <script src="js/zipCodePopup.js"></script> -->
+        <script src="js/joinPopup.js"></script>
+        <script src="js/login.js"></script>
+        <script src="js/logout.js"></script>
+    </head>
+    
+    <body>
+    
+	        <div id='headerbg'>
+        		<img src='img/header50.png' />
+		            <div id='testLine1'></div>
+		            <div id='testLine2'></div>
+	        
+		        <div id='header'>
+		            <div id='topmenu'>
+		            
+		                <span id='logo'>
+		                	<a href='#'><img src='img/logo.jpg' alt='LiBridge'></a>
+	                	</span>
+	                	
+	                	<div id='topMenuInjection'></div>
+		                
+		                <div id='searchBox'>
+		                    	
+		                    	<label for='searchInput'>
+		                    		<img src='img/searchIcon.png' alt='검색' />
+	                    		</label>
+	                    		
+		                    	<input type='text' id='searchInput' placeholder='SEARCH' />
+		                </div>
+		                
+		                <div id='state'>
+<!-- 		                    <span id="login" class='memberState'><a id='loginPopup' href='#loginForm'></a></span> -->
+		                </div>
+		                
+		            </div>
+		            <div>
+		                <ul id='logomenu' class='submenu boxShadow'>
+		                    <li class='hovereverse' id='returnHome'><a class='wide' href="#">홈</a></li>
+		                    <li class='hovereverse' id='noticeLink'><a class='wide' href="#">공지사항</a></li>
+		                    <li class='hovereverse' id='guideLink'><a class='wide' href="#">이용안내</a></li>
+		                    <li class='hovereverse' id='boardLink'><a class='wide' href="#">게시판</a></li>
+		                </ul>
+		                <ul id='usermenu' class='submenu boxShadow'>
+		                    <li class='hovereverse' id='dropMenuBorrowCon'><a class='wide' href="#">내가 빌린 책</a></li>
+		                    <li class='hovereverse' id='dropMenuLendCon'><a class='wide' href="#">내가 빌려준 책</a></li>
+		                    <li class='hovereverse' id='dropMenuMyLibrary'><a class='wide' href="#">나의 서재</a></li>
+		                    <li class='hovereverse' id='dropMenuMyInform'><a class='wide' href="#">나의 페이지</a></li>
+		                    <li class='hovereverse' id='dropMenuLogOut'><a class='wide' href="#">로그아웃</a></li>
+		                </ul>
+		            </div>
+		        </div> <!-- header end -->
+        	</div>
+            <div id='categoryMenu'>
+            	<div class='cate' id='cate1'><a class='wide'>문학</a></div>
+            	<div class='cate' id='cate2'><a class='wide'>인문 / 사회</a></div>
+            	<div class='cate' id='cate3'><a class='wide'>자연 / 과학</a></div>
+            	<div class='cate' id='cate4'><a class='wide'>생활 / 취미</a></div>
+            	<div class='cate' id='cate5'><a class='wide'>예술 / 문화</a></div>
+            	<div class='cate' id='cate6'><a class='wide'>학습</a></div>
+            	<div class='cate' id='cate7'><a class='wide'>청소년 / 어린이</a></div>
+            	<div class='cate' id='cate8'><a class='wide'>기타</a></div>
+            </div> <!-- Category Menu -->
+            
+            <div id='subCategoryMenu'>
+            	<div  id='literature' class='cateSubmenu'>
+            	</div>
+            	<div id='liberalArts' class='cateSubmenu'>
+            	</div>
+            	<div id='scienceEngineer' class='cateSubmenu'>
+            	</div>
+            	<div id='lifeStyle' class='cateSubmenu'>
+            	</div>
+            	<div id='culture' class='cateSubmenu'>
+            	</div>
+            	<div id='education' class='cateSubmenu'>
+            	</div>
+            	<div id='childTeen' class='cateSubmenu'>
+            	</div>
+            	<div id='etc' class='cateSubmenu'>
+            	</div>
+            </div>
+        	
+		<div id='wrapper'>
+	         <!-- 로그인 폼에서 자동로그인/로그인/id찾기/회원가입 버튼은 이미지로 -->
+	        <div id="logIn_signUpForm">
+	        
+		        <div id="loginForm">
+					<p>
+						<input class='loginInputForm' type='text' id='idBox' name='id' placeholder='아이디' />
+					</p>
+					<p>
+						<input class='loginInputForm' type='password' id='pwdBox' name='password' placeholder='패스워드' />
+					</p>
+<!-- 					<input id='autoLoginCheckbox' name="saveId" type='checkbox' /><img src='img/auto.jpg' alt='자동' /> -->
+<!-- 					<a class='wide' href='#'><img src='img/login.jpg' alt='로그인' /></a> -->
+					<p>
+						<input class='loginInputForm' id='loginClick' type='button' value='로그인' />
+					</p>
+<!-- 					<a class='wide' href='#'><img src='img/join.jpg' alt='회원가입' /></a> -->
+					<p>
+						<input class='loginInputForm' id='joinMember' type='button' value='회원가입' />
+					</p>
+				</div>
+			        
+			</div>
+            <div id='content'>
+            </div>
+	        <div id='bookUploadSearchForm'>
+	        
+	        	<div id='bookUploadSearchPopup'>
+					<p>
+						<label for='bookUploadBox'><span id='bookUploadNotice'>등록하실 책의 제목을 입력하세요.</span></label>
+					</p>
+					<p>
+						<input type='text' id='bookUploadBox' name='bookUploadBox' placeholder='검색어' />
+					</p>
+					<p>
+						<input id='bookUpSearchConfirm' type='button' value='검색' />
+					</p>
+				</div>
+			
+	        </div>
+	        
+	        <div class='tmpDiv'>
+			</div>
+        </div>
+        
+
+        <div id='footerbg'>
+            <img src='img/footer50.png' />
+            <div id="footer">
+                <span id='teamName' class='team'>
+                    noSmoking @ Java33 in Bit
+                </span>
+                <span id='teamMember' class='team'>
+                    박정관 / 김연정 / 형진석 / 홍성남 / 김홍태
+                </span>
+            </div>
+            <span></span>
+        </div>
+	<script>
+		loginForm.init();
+		indexGlobal.userInfo();
+	</script>
+    </body>
+</html>

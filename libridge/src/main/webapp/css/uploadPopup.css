@@ -1,0 +1,16 @@
+#uploadPage {
+	  border  : 1px #D3D4D5 solid;
+	  position: relative;
+	  display: block;
+	  width   : 480px;
+	  height  : 420px;
+	  top : 28px;
+	  left    : 50px;
+	  overflow : hidden;
+}
+
+#leftSide {
+	display : block;
+	float : left;
+	width : 470px;
+}

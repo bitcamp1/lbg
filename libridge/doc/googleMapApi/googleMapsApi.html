@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  <!--  반드시 html태그와 body 태그에 height 를 100% 로 줘야한다. -->
+  	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="viewport" content="initial-scale=1.0, user-scalable=no" />
+   	<link type="text/css" rel="stylesheet" href="googleMapsApi.css">
+   	<script src="googleMapsApi.js"></script>
+   	<script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
+    <script type="text/javascript"
+      src="http://maps.googleapis.com/maps/api/js?sensor=false">
+    </script>
+    <script type="text/javascript">
+    $(document).ready( function () {
+    	var mapOptions = {
+    	        center: new google.maps.LatLng(38, 128),
+    	          zoom: 8,
+    	          mapTypeId: google.maps.MapTypeId.ROADMAP
+    	        };
+    	        var map = new google.maps.Map(document.getElementById("map_canvas"),
+    	            mapOptions);
+    });
+    </script>
+  </head>
+  <body>
+    <div id="map_canvas"></div>
+  </body>
+</html>

@@ -1,0 +1,53 @@
+#bookSearchPage {
+	*border     : 1px red solid;
+	*border     : 1px #D3D4D5 solid;
+	width       : 820px;
+	height      : 100%;
+	*position    : relative;
+	*top         : 50px;
+	*left       : 70px;
+	margin-right: auto;
+	margin-left : auto;
+	padding-top: 80px;
+	overflow : hidden;
+
+}
+
+.bookSearchPageInfo {
+	border-bottom: 1px #D3D4D5 solid;
+	*border-bottom: 1px blue solid;
+	width        : 100%;
+	display      : inline-block;
+	font-size    : 1em;
+	font-weight  : bold;
+}
+
+.bookSearchResult {
+	*border : 1px red solid;
+	display : inline-block;
+	padding-bottom : 10px;
+}
+
+/*책 섬네일 css*/
+/*메인 페이지 and 검색 시 나오는 책 위치와 섬네일, 제목 폰트 크기*/
+.bookSearchInfo {
+	*border : 1px red solid;
+	display      : block;
+	width		 : 150px;
+	height		 : 180px;
+	text-align   : center;
+	float        : left;
+	margin-top   : 5px;
+	margin-bottom : 5px;
+	margin-left  : 16px;
+	margin-right : 16px;
+	padding : 20px 10px;
+	font-size    : 0.5em;
+}
+
+.ellipsis {
+	*width        : 130px;
+	text-overflow: ellipsis;
+	white-space  : nowrap;
+	overflow     : hidden;
+}

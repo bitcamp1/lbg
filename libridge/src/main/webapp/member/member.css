@@ -1,0 +1,68 @@
+@CHARSET "utf-8";
+
+#table{
+	float:left;
+	width:95%;
+}
+#joinForm {
+	position:relative; top:0; left:30px;
+	max-width:700px; min-width:500px;
+	margin-right:auto; margin-left:auto;
+	}
+#joinForm >#header {  
+	padding:0  0 0 50px  ;
+	width:90%;  }
+#joinForm >#contents{ width:100%; }
+#joinForm >#bottom{ width:100%; }
+#table>.row{
+	margin:8px;
+}
+.row>.col{
+	float:left;
+	width:100px;
+	text-align:right;
+	margin: 4px 7px 0 0;
+	padding:0 5px 2px 0;
+}
+.space{
+	width:82px;
+}
+#smsCheck{padding:10px 0 0 0;}
+#preventAutoRegist{padding:10px 0 0 0;}
+#finalConfirm{padding:10px 0;}
+.button {
+	/*border styles*/
+	width: 100px;
+	margin: auto;
+	border-left: solid 1px #c3f83a;
+	border-top: solid 1px #c3f83a;
+	border-right: solid 1px #82a528;
+	border-bottom: solid 1px #58701b;
+	-moz-border-radius: 10px;
+	-webkit-border-radius: 10px;
+}
+#loginForm {
+font-family: sans-serif;
+}
+#loginLine {
+	margin-right: 1020px;
+	padding: 0px 0px 120px 0px;
+}
+#loginBorderText {
+	margin-right: 1000px;
+	position: absolute;
+	left: 20px;
+}
+#loginImgButton {
+	margin-right: 1000px;
+	position: absolute;
+	left: 180px;
+	bottom: 850px;
+}
+#loginBorderButton {
+	margin-right: 1000px;
+	position: absolute;
+	top: 80px;
+	left: 20px;
+}
+
